@@ -35,17 +35,20 @@ https://app.dbdesigner.net/designer/schema/0-star-schema-p2
 **Business Requirements:**
 
 Q1) Analyse how much time is spent per ride:
+
 a) Based on date and time factors such as day of week and time of day
 b) Based on which station is the starting station and ending station
 c) Based on age of the rider at time of the ride
 d) Based on whether the rider is a member or a casual rider
 
 Q2) Analyse how much money is spent:
+
 a) Per month, quarter, year
 b) Per member, based on the age of the rider at account start
 
 
 Q3) **EXTRA CREDIT** - Analyse how much money is spent per member:
+
 a) Based on how many rides the rider averages per month
 b) Based on how many minutes the rider spends on a bike per month
 
