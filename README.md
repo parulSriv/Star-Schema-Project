@@ -1,4 +1,4 @@
-**Star-Schema-Project using PySpark**
+**Documentation for Star Schema Project- Pyspark | Databricks**
 **The Bike Sharing Programme**
 
 **Introduction**
@@ -13,10 +13,40 @@
 | trips.csv | This file includes data around the trip: [trip_id, rideable_type, started_at, ended_at, start_station_id, end_station_id, member_id] |
 | stations.csv | This file includes data around the station: [station_id, name, longitude, latitude] |
 
-**Data Modeling for Star Schema **
-** 1. Conceptual Model **
+
+**Conceptual Model plus Logical model for Star Schema**
+It is an organized business overview of the data needed to support business processes, document business events, and monitor associated performance indicators provided by the conceptual data model. The following link also includes a logical model explaining the relationship within the data a bit in detail:
 https://app.dbdesigner.net/designer/schema/0-star-schema-p2
 
 
 **Data loading**
 >Data is uploaded and schema is defined in the first cell of the python file uploaded above. 
+
+**Data transformation**
+>As per the business requirements, few transformations needs to be done such as:
+>>Trip duration calculation using trips.csv
+>>Age of the rider from the birthday column using riders.csv
+>>Split month and year from date  using payment.csv
+
+**Creation of FACT table**
+>To create a fact table, all above mentioned raw data needs to be converted and cleaned to create respective dimension tables. Reference can be taken from the https://app.dbdesigner.net/designer/schema/0-star-schema-p2. Using spark.sql : complex join operation, combine all the dimension tables to create one FACT table using foreign key. The code for the same is provided in the notebook attached above. 
+
+
+**Business Requirements:**
+
+Q1) Analyse how much time is spent per ride:
+a) Based on date and time factors such as day of week and time of day
+b) Based on which station is the starting station and ending station
+c) Based on age of the rider at time of the ride
+d) Based on whether the rider is a member or a casual rider
+
+Q2) Analyse how much money is spent:
+a) Per month, quarter, year
+b) Per member, based on the age of the rider at account start
+
+
+Q3) **EXTRA CREDIT** - Analyse how much money is spent per member:
+a) Based on how many rides the rider averages per month
+b) Based on how many minutes the rider spends on a bike per month
+
+**To support findings, visualizations/plot has been drawn using python library matplotlib.**
