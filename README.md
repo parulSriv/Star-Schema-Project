@@ -2,7 +2,7 @@
 **The Bike Sharing Programme**
 
 **Introduction**
->This project revolves around building a Star schema using Biking data. Using this star Schema, organizations can efficiently perform business queries. Customers can use the bike sharing programme to lease  a bike from any station operated by the company, can ride it within the allowed premisis for a predetermined period of time, and then park it back to either same or different station. Here only one databricks pyspark notebook is used to load the data, perform transformations, create fact and dimension tables and answer business questions mentioned down below the page.  
+>This project revolves around building a Star schema using Biking data. Using this star Schema, organizations can efficiently perform business queries. Customers can use the bike sharing programme to lease a bike from any station operated by the company, can ride it within the allowed premises for a predetermined period, and then park it back at either the same or a different station. Here only one databricks pyspark notebook is used to load the data, perform transformations, create fact and dimension tables and answer business questions mentioned below the page.  
 
 **Data used**
 
@@ -15,7 +15,7 @@
 
 
 **Conceptual Model plus Logical model for Star Schema**
-It is an organized business overview of the data needed to support business processes, document business events, and monitor associated performance indicators provided by the conceptual data model. The following link also includes a logical model explaining the relationship within the data a bit in detail:
+>It is an organized business overview of the data needed to support business processes, document business events, and monitor associated performance indicators provided by the conceptual data model. The following link also includes a logical model explaining the relationship within the data a bit in detail:
 https://app.dbdesigner.net/designer/schema/0-star-schema-p2
 
 
@@ -29,7 +29,7 @@ https://app.dbdesigner.net/designer/schema/0-star-schema-p2
 >>Split month and year from date  using payment.csv
 
 **Creation of FACT table**
->To create a fact table, all above mentioned raw data needs to be converted and cleaned to create respective dimension tables. Reference can be taken from the https://app.dbdesigner.net/designer/schema/0-star-schema-p2. Using spark.sql : complex join operation, combine all the dimension tables to create one FACT table using foreign key. The code for the same is provided in the notebook attached above. 
+>To create a fact table, all above mentioned raw data needs to be converted and cleaned to create respective dimension tables. Reference can be taken from https://app.dbdesigner.net/designer/schema/0-star-schema-p2. Using spark.sql: complex join operation, combine all the dimension tables to create one FACT table using a foreign key. The code for the same is provided in the notebook attached above. 
 
 
 **Business Requirements:**
