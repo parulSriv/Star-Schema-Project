@@ -25,11 +25,11 @@ https://app.dbdesigner.net/designer/schema/0-star-schema-p2
 **Data transformation**
 >As per the business requirements, few transformations needs to be done such as:
 
->*Trip duration calculation using trips.csv
+>*1. Trip duration calculation using trips.csv*
 >
->Age of the rider from the birthday column using riders.csv
+>*2. Age of the rider from the birthday column using riders.csv*
 >
->Split month and year from date  using payment.csv*
+>*3. Split month and year from date  using payment.csv*
 
 **Creation of FACT table**
 >To create a fact table, all above mentioned raw data needs to be converted and cleaned to create respective dimension tables. Reference can be taken from https://app.dbdesigner.net/designer/schema/0-star-schema-p2. 
