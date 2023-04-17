@@ -24,12 +24,14 @@ https://app.dbdesigner.net/designer/schema/0-star-schema-p2
 
 **Data transformation**
 >As per the business requirements, few transformations needs to be done such as:
->>Trip duration calculation using trips.csv
->>Age of the rider from the birthday column using riders.csv
->>Split month and year from date  using payment.csv
+
+>*Trip duration calculation using trips.csv
+>Age of the rider from the birthday column using riders.csv
+>Split month and year from date  using payment.csv*
 
 **Creation of FACT table**
->To create a fact table, all above mentioned raw data needs to be converted and cleaned to create respective dimension tables. Reference can be taken from https://app.dbdesigner.net/designer/schema/0-star-schema-p2. Using spark.sql: complex join operation, combine all the dimension tables to create one FACT table using a foreign key. The code for the same is provided in the notebook attached above. 
+>To create a fact table, all above mentioned raw data needs to be converted and cleaned to create respective dimension tables. Reference can be taken from https://app.dbdesigner.net/designer/schema/0-star-schema-p2. 
+>Using spark.sql: complex join operation, combine all the dimension tables to create one FACT table using a foreign key. The code for the same is provided in the notebook attached above. 
 
 
 **Business Requirements:**
