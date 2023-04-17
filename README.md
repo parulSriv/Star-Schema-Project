@@ -2,7 +2,8 @@
 **The Bike Sharing Programme**
 
 **Introduction**
->This project revolves around building a Star schema using Biking data. Using this star Schema, organizations can efficiently perform business queries. Customers can use the bike sharing programme to lease a bike from any station operated by the company, can ride it within the allowed premises for a predetermined period, and then park it back at either the same or a different station. Here only one databricks pyspark notebook is used to load the data, perform transformations, create fact and dimension tables and answer business questions mentioned below the page.  
+>This project is based on building a data lake solution for a bike sharing program in Chicago, Illinois USA. This allows riders to purchase a pass at a kiosk or use a mobile application to unlock a bike at stations around the city and use the bike for a specified amount of time. The bikes can be returned to the same station or to another station. 
+>This project creates a Star Schema that ingests data without a defined schema, then manipulates the incoming data by enforcing a given schema. Lastly, the Facts and Dimensions should be split out into a Star Schema to enable easy reporting. All the steps are done within the same databricks pyspark notebook.
 
 **Data used**
 
