@@ -26,7 +26,9 @@ https://app.dbdesigner.net/designer/schema/0-star-schema-p2
 >As per the business requirements, few transformations needs to be done such as:
 
 >*Trip duration calculation using trips.csv
+>
 >Age of the rider from the birthday column using riders.csv
+>
 >Split month and year from date  using payment.csv*
 
 **Creation of FACT table**
